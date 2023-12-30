@@ -1,0 +1,29 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" href="../assets/style.css">
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+                <a href="/signout" style="color: black;"><button id="button-signin-home" class="btn btn-outline-success me-2"
+        type="button"> SignOut</button></a>
+        <div class="row">
+            {{#each phone}}
+
+            <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+                <div class="card">
+                    <img class="card-img-top" src={{this.img}}>
+                    <div class="card-block">
+                        <h4 class="card-title">{{this.title}}</h4>
+                        <div class="card-text">
+                            {{this.details}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {{/each}}
+
+
+        </div>
+</div>
